@@ -1,6 +1,6 @@
 ﻿namespace Project_Hospital
 {
-    partial class Form1
+    partial class FrmEntrances
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
