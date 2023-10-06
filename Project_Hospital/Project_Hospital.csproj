@@ -52,6 +52,12 @@
     <Compile Include="FrmEntrances.Designer.cs">
       <DependentUpon>FrmEntrances.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientDetail.Designer.cs">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPatientEnterence.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmEntrances.resx">
       <DependentUpon>FrmEntrances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientDetail.resx">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientEnterence.resx">
       <DependentUpon>FrmPatientEnterence.cs</DependentUpon>
