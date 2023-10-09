@@ -34,6 +34,7 @@
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.UpdateInfo = new System.Windows.Forms.LinkLabel();
             this.BtnAppointment = new System.Windows.Forms.Button();
             this.RchComplain = new System.Windows.Forms.RichTextBox();
             this.CmbDoctor = new System.Windows.Forms.ComboBox();
@@ -42,15 +43,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.CmbUnit = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.LnkLineUpInfo = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +109,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.LnkLineUpInfo);
+            this.groupBox2.Controls.Add(this.UpdateInfo);
             this.groupBox2.Controls.Add(this.BtnAppointment);
             this.groupBox2.Controls.Add(this.RchComplain);
             this.groupBox2.Controls.Add(this.CmbDoctor);
@@ -123,6 +123,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Patient Information";
+            // 
+            // UpdateInfo
+            // 
+            this.UpdateInfo.AutoSize = true;
+            this.UpdateInfo.Location = new System.Drawing.Point(127, 271);
+            this.UpdateInfo.Name = "UpdateInfo";
+            this.UpdateInfo.Size = new System.Drawing.Size(102, 13);
+            this.UpdateInfo.TabIndex = 10;
+            this.UpdateInfo.TabStop = true;
+            this.UpdateInfo.Text = "Update Informations";
             // 
             // BtnAppointment
             // 
@@ -199,6 +209,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Appointment History";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(458, 252);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView2);
@@ -209,15 +228,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Active Appointments";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(458, 252);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -226,16 +236,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(458, 207);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // LnkLineUpInfo
-            // 
-            this.LnkLineUpInfo.AutoSize = true;
-            this.LnkLineUpInfo.Location = new System.Drawing.Point(127, 271);
-            this.LnkLineUpInfo.Name = "LnkLineUpInfo";
-            this.LnkLineUpInfo.Size = new System.Drawing.Size(104, 13);
-            this.LnkLineUpInfo.TabIndex = 10;
-            this.LnkLineUpInfo.TabStop = true;
-            this.LnkLineUpInfo.Text = "Line Up Informations";
             // 
             // FrmPatientDetail
             // 
@@ -254,8 +254,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
@@ -280,6 +280,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.LinkLabel LnkLineUpInfo;
+        private System.Windows.Forms.LinkLabel UpdateInfo;
     }
 }
