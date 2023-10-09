@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorDetails.Designer.cs">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorEntrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorEntrance.Designer.cs">
+      <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEntrances.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEntrances.Designer.cs">
       <DependentUpon>FrmEntrances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformationLineUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformationLineUp.Designer.cs">
+      <DependentUpon>FrmInformationLineUp.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPatientDetail.cs">
       <SubType>Form</SubType>
@@ -72,8 +90,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDoctorDetails.resx">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorEntrance.resx">
+      <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEntrances.resx">
       <DependentUpon>FrmEntrances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformationLineUp.resx">
+      <DependentUpon>FrmInformationLineUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientDetail.resx">
       <DependentUpon>FrmPatientDetail.cs</DependentUpon>
