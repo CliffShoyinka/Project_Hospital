@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppointmentList.Designer.cs">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAssistant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="FrmDoctorEntrance.Designer.cs">
       <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.Designer.cs">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEntrances.cs">
       <SubType>Form</SubType>
@@ -100,8 +112,17 @@
     <Compile Include="FrmSignIn.Designer.cs">
       <DependentUpon>FrmSignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnit.Designer.cs">
+      <DependentUpon>FrmUnit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAppointmentList.resx">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAssistant.resx">
       <DependentUpon>FrmAssistant.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorEntrance.resx">
       <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorPanel.resx">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEntrances.resx">
       <DependentUpon>FrmEntrances.cs</DependentUpon>
@@ -128,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSignIn.resx">
       <DependentUpon>FrmSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnit.resx">
+      <DependentUpon>FrmUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
