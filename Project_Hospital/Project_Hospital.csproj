@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAssistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssistant.Designer.cs">
+      <DependentUpon>FrmAssistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssitantDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssitantDetail.Designer.cs">
+      <DependentUpon>FrmAssitantDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDoctorDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAssistant.resx">
+      <DependentUpon>FrmAssistant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssitantDetail.resx">
+      <DependentUpon>FrmAssitantDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorDetails.resx">
       <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
     </EmbeddedResource>
