@@ -120,6 +120,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlconnection.cs" />
     <EmbeddedResource Include="FrmAppointmentList.resx">
       <DependentUpon>FrmAppointmentList.cs</DependentUpon>
     </EmbeddedResource>
