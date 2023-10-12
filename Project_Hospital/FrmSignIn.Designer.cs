@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSignIn));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -177,6 +178,7 @@
             this.BtnSignIn.TabIndex = 13;
             this.BtnSignIn.Text = "Sign In";
             this.BtnSignIn.UseVisualStyleBackColor = true;
+            this.BtnSignIn.Click += new System.EventHandler(this.BtnSignIn_Click);
             // 
             // FrmSignIn
             // 
@@ -198,8 +200,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSignIn";
-            this.Text = "FrmSignIn";
+            this.Text = "Sign In";
             this.ResumeLayout(false);
             this.PerformLayout();
 

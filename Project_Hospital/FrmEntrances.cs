@@ -17,6 +17,25 @@ namespace Project_Hospital
             InitializeComponent();
         }
 
-        
+        private void BtnPatientEntrance_Click(object sender, EventArgs e)
+        {
+            FrmPatientEnterence fr = new FrmPatientEnterence();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void BtnDoctorEntrance_Click(object sender, EventArgs e)
+        {
+            FrmDoctorEntrance fr = new FrmDoctorEntrance();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void BtnAssistantEntrance_Click(object sender, EventArgs e)
+        {
+            FrmAssistant fr = new FrmAssistant();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

@@ -29,44 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntrances));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnPatientEntrance = new System.Windows.Forms.Button();
+            this.BtnDoctorEntrance = new System.Windows.Forms.Button();
+            this.BtnAssistantEntrance = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnPatientEntrance
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(22, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 156);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnPatientEntrance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPatientEntrance.BackgroundImage")));
+            this.BtnPatientEntrance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPatientEntrance.Location = new System.Drawing.Point(22, 119);
+            this.BtnPatientEntrance.Name = "BtnPatientEntrance";
+            this.BtnPatientEntrance.Size = new System.Drawing.Size(179, 156);
+            this.BtnPatientEntrance.TabIndex = 0;
+            this.BtnPatientEntrance.UseVisualStyleBackColor = true;
+            this.BtnPatientEntrance.Click += new System.EventHandler(this.BtnPatientEntrance_Click);
             // 
-            // button2
+            // BtnDoctorEntrance
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(207, 119);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 156);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnDoctorEntrance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDoctorEntrance.BackgroundImage")));
+            this.BtnDoctorEntrance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDoctorEntrance.Location = new System.Drawing.Point(207, 119);
+            this.BtnDoctorEntrance.Name = "BtnDoctorEntrance";
+            this.BtnDoctorEntrance.Size = new System.Drawing.Size(179, 156);
+            this.BtnDoctorEntrance.TabIndex = 1;
+            this.BtnDoctorEntrance.UseVisualStyleBackColor = true;
+            this.BtnDoctorEntrance.Click += new System.EventHandler(this.BtnDoctorEntrance_Click);
             // 
-            // button3
+            // BtnAssistantEntrance
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(392, 119);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 156);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnAssistantEntrance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAssistantEntrance.BackgroundImage")));
+            this.BtnAssistantEntrance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAssistantEntrance.Location = new System.Drawing.Point(392, 119);
+            this.BtnAssistantEntrance.Name = "BtnAssistantEntrance";
+            this.BtnAssistantEntrance.Size = new System.Drawing.Size(179, 156);
+            this.BtnAssistantEntrance.TabIndex = 2;
+            this.BtnAssistantEntrance.UseVisualStyleBackColor = true;
+            this.BtnAssistantEntrance.Click += new System.EventHandler(this.BtnAssistantEntrance_Click);
             // 
             // label1
             // 
@@ -94,9 +97,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(448, 300);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 25);
+            this.label3.Size = new System.Drawing.Size(92, 25);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Assitant";
+            this.label3.Text = "Assistant";
             // 
             // label4
             // 
@@ -112,17 +115,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(592, 341);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnAssistantEntrance);
+            this.Controls.Add(this.BtnDoctorEntrance);
+            this.Controls.Add(this.BtnPatientEntrance);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmEntrances";
-            this.Text = "Form1";
+            this.Text = "Hospital Entrance";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,9 +136,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnPatientEntrance;
+        private System.Windows.Forms.Button BtnDoctorEntrance;
+        private System.Windows.Forms.Button BtnAssistantEntrance;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

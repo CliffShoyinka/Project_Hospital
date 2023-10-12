@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Hospital
 {
@@ -17,5 +18,11 @@ namespace Project_Hospital
             InitializeComponent();
         }
 
+        sqlconnection connect = new sqlconnection();
+
+        private void BtnSignIn_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("insert into Tbl_patients (PatientName,PatientSurname,PatientTC,PatientMobile,PatientPassword,PatientGender) values (@p1,@p2,@p3,@p4,@p5,@p6)",connect.connection());
+        }
     }
 }

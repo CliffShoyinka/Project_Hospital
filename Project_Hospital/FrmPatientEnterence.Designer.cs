@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientEnterence));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -94,6 +95,7 @@
             this.LnkSignIn.TabIndex = 5;
             this.LnkSignIn.TabStop = true;
             this.LnkSignIn.Text = "Sign In";
+            this.LnkSignIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkSignIn_LinkClicked);
             // 
             // BtnEnter
             // 
@@ -107,8 +109,10 @@
             // 
             // FrmPatientEnterence
             // 
+            this.AcceptButton = this.LnkSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(582, 381);
             this.Controls.Add(this.BtnEnter);
@@ -118,8 +122,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPatientEnterence";
-            this.Text = "FrmPatientEnterence";
+            this.Text = "Patient Entrance";
             this.ResumeLayout(false);
             this.PerformLayout();
 
