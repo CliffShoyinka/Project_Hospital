@@ -106,6 +106,7 @@
             this.BtnEnter.TabIndex = 6;
             this.BtnEnter.Text = "Enter";
             this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // FrmPatientEnterence
             // 
