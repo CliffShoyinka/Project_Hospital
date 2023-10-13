@@ -34,7 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TxtTc = new System.Windows.Forms.MaskedTextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.LnkSignIn = new System.Windows.Forms.LinkLabel();
+            this.LnkSignUp = new System.Windows.Forms.LinkLabel();
             this.BtnEnter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -85,17 +85,17 @@
             this.TxtPassword.Size = new System.Drawing.Size(248, 26);
             this.TxtPassword.TabIndex = 4;
             // 
-            // LnkSignIn
+            // LnkSignUp
             // 
-            this.LnkSignIn.AutoSize = true;
-            this.LnkSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LnkSignIn.Location = new System.Drawing.Point(458, 241);
-            this.LnkSignIn.Name = "LnkSignIn";
-            this.LnkSignIn.Size = new System.Drawing.Size(73, 25);
-            this.LnkSignIn.TabIndex = 5;
-            this.LnkSignIn.TabStop = true;
-            this.LnkSignIn.Text = "Sign In";
-            this.LnkSignIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkSignIn_LinkClicked);
+            this.LnkSignUp.AutoSize = true;
+            this.LnkSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LnkSignUp.Location = new System.Drawing.Point(458, 241);
+            this.LnkSignUp.Name = "LnkSignUp";
+            this.LnkSignUp.Size = new System.Drawing.Size(82, 25);
+            this.LnkSignUp.TabIndex = 5;
+            this.LnkSignUp.TabStop = true;
+            this.LnkSignUp.Text = "Sign Up";
+            this.LnkSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkSignUp_LinkClicked_1);
             // 
             // BtnEnter
             // 
@@ -109,14 +109,14 @@
             // 
             // FrmPatientEnterence
             // 
-            this.AcceptButton = this.LnkSignIn;
+            this.AcceptButton = this.LnkSignUp;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(582, 381);
             this.Controls.Add(this.BtnEnter);
-            this.Controls.Add(this.LnkSignIn);
+            this.Controls.Add(this.LnkSignUp);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtTc);
             this.Controls.Add(this.label3);
@@ -137,7 +137,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox TxtTc;
         private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.LinkLabel LnkSignIn;
+        private System.Windows.Forms.LinkLabel LnkSignUp;
         private System.Windows.Forms.Button BtnEnter;
     }
 }

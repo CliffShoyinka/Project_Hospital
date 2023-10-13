@@ -20,9 +20,11 @@ namespace Project_Hospital
 
         sqlconnection connect = new sqlconnection();
 
-        private void BtnSignIn_Click(object sender, EventArgs e)
+        
+
+        private void BtnSignUp_Click_1(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("insert into Tbl_patients (PatientName,PatientSurname,PatientTC,PatientMobile,PatientPassword,PatientGender) values (@p1,@p2,@p3,@p4,@p5,@p6)",connect.connection());
+            SqlCommand command = new SqlCommand("insert into Tbl_patients (PatientName,PatientSurname,PatientTC,PatientMobile,PatientPassword,PatientGender) values (@p1,@p2,@p3,@p4,@p5,@p6)", connect.connection());
             command.Parameters.AddWithValue("@p1", TxtName.Text);
             command.Parameters.AddWithValue("@p2", TxtSurname.Text);
             command.Parameters.AddWithValue("@p3", MskTc.Text);
@@ -31,8 +33,7 @@ namespace Project_Hospital
             command.Parameters.AddWithValue("@p6", CmbGender.Text);
             command.ExecuteNonQuery();
             connect.connection().Close();
-            MessageBox.Show("Sign Up Successful. Your Password: " + TxtPassword.Text,"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
-
+            MessageBox.Show("Sign Up Successful. Your Password: " + TxtPassword.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

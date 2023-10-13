@@ -42,7 +42,7 @@
             this.MskMobile = new System.Windows.Forms.MaskedTextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.CmbGender = new System.Windows.Forms.ComboBox();
-            this.BtnSignIn = new System.Windows.Forms.Button();
+            this.BtnSignUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,9 +111,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.Location = new System.Drawing.Point(168, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 39);
+            this.label7.Size = new System.Drawing.Size(139, 39);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Sign In";
+            this.label7.Text = "Sign Up";
             // 
             // TxtName
             // 
@@ -169,16 +169,16 @@
             this.CmbGender.Size = new System.Drawing.Size(199, 28);
             this.CmbGender.TabIndex = 12;
             // 
-            // BtnSignIn
+            // BtnSignUp
             // 
-            this.BtnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSignIn.Location = new System.Drawing.Point(175, 425);
-            this.BtnSignIn.Name = "BtnSignIn";
-            this.BtnSignIn.Size = new System.Drawing.Size(137, 47);
-            this.BtnSignIn.TabIndex = 13;
-            this.BtnSignIn.Text = "Sign In";
-            this.BtnSignIn.UseVisualStyleBackColor = true;
-            this.BtnSignIn.Click += new System.EventHandler(this.BtnSignIn_Click);
+            this.BtnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSignUp.Location = new System.Drawing.Point(175, 425);
+            this.BtnSignUp.Name = "BtnSignUp";
+            this.BtnSignUp.Size = new System.Drawing.Size(137, 47);
+            this.BtnSignUp.TabIndex = 13;
+            this.BtnSignUp.Text = "Sign Up";
+            this.BtnSignUp.UseVisualStyleBackColor = true;
+            this.BtnSignUp.Click += new System.EventHandler(this.BtnSignUp_Click_1);
             // 
             // FrmSignIn
             // 
@@ -186,7 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(465, 502);
-            this.Controls.Add(this.BtnSignIn);
+            this.Controls.Add(this.BtnSignUp);
             this.Controls.Add(this.CmbGender);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.MskMobile);
@@ -223,6 +223,6 @@
         private System.Windows.Forms.MaskedTextBox MskMobile;
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.ComboBox CmbGender;
-        private System.Windows.Forms.Button BtnSignIn;
+        private System.Windows.Forms.Button BtnSignUp;
     }
 }
