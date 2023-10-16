@@ -249,6 +249,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPatientDetail";
             this.Text = "Patient Detail";
+            this.Load += new System.EventHandler(this.FrmPatientDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

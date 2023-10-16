@@ -37,6 +37,7 @@ namespace Project_Hospital
             if (dr.Read()) 
             {
                 FrmPatientDetail fr = new FrmPatientDetail();
+                fr.tc = TxtTc.Text;
                 fr.Show();
                 this.Hide();
             }
