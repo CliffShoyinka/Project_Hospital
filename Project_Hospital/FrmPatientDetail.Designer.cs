@@ -46,6 +46,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -109,6 +111,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.TxtID);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.UpdateInfo);
             this.groupBox2.Controls.Add(this.BtnAppointment);
             this.groupBox2.Controls.Add(this.RchComplain);
@@ -133,6 +137,7 @@
             this.UpdateInfo.TabIndex = 10;
             this.UpdateInfo.TabStop = true;
             this.UpdateInfo.Text = "Update Informations";
+            this.UpdateInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.UpdateInfo_LinkClicked);
             // 
             // BtnAppointment
             // 
@@ -155,10 +160,11 @@
             // 
             this.CmbDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoctor.FormattingEnabled = true;
-            this.CmbDoctor.Location = new System.Drawing.Point(101, 100);
+            this.CmbDoctor.Location = new System.Drawing.Point(101, 105);
             this.CmbDoctor.Name = "CmbDoctor";
             this.CmbDoctor.Size = new System.Drawing.Size(163, 28);
             this.CmbDoctor.TabIndex = 7;
+            this.CmbDoctor.SelectedIndexChanged += new System.EventHandler(this.CmbDoctor_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -174,7 +180,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(20, 100);
+            this.label6.Location = new System.Drawing.Point(20, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 22);
             this.label6.TabIndex = 5;
@@ -184,7 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(41, 55);
+            this.label5.Location = new System.Drawing.Point(41, 70);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 22);
             this.label5.TabIndex = 4;
@@ -194,10 +200,11 @@
             // 
             this.CmbUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbUnit.FormattingEnabled = true;
-            this.CmbUnit.Location = new System.Drawing.Point(101, 52);
+            this.CmbUnit.Location = new System.Drawing.Point(101, 67);
             this.CmbUnit.Name = "CmbUnit";
             this.CmbUnit.Size = new System.Drawing.Size(163, 28);
             this.CmbUnit.TabIndex = 2;
+            this.CmbUnit.SelectedIndexChanged += new System.EventHandler(this.CmbUnit_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -236,6 +243,24 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(458, 207);
             this.dataGridView2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(55, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 22);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "ID:";
+            // 
+            // TxtID
+            // 
+            this.TxtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtID.Location = new System.Drawing.Point(101, 32);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.Size = new System.Drawing.Size(163, 27);
+            this.TxtID.TabIndex = 12;
             // 
             // FrmPatientDetail
             // 
@@ -282,5 +307,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel UpdateInfo;
+        private System.Windows.Forms.TextBox TxtID;
+        private System.Windows.Forms.Label label2;
     }
 }

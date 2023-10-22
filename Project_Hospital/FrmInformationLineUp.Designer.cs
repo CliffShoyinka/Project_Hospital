@@ -64,7 +64,7 @@
             this.CmbGender.Location = new System.Drawing.Point(184, 348);
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(199, 28);
-            this.CmbGender.TabIndex = 26;
+            this.CmbGender.TabIndex = 6;
             // 
             // TxtPassword
             // 
@@ -72,7 +72,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(184, 302);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(199, 27);
-            this.TxtPassword.TabIndex = 25;
+            this.TxtPassword.TabIndex = 5;
             // 
             // MskMobile
             // 
@@ -81,7 +81,7 @@
             this.MskMobile.Mask = "(999) 000-0000";
             this.MskMobile.Name = "MskMobile";
             this.MskMobile.Size = new System.Drawing.Size(199, 27);
-            this.MskMobile.TabIndex = 24;
+            this.MskMobile.TabIndex = 4;
             // 
             // MskTc
             // 
@@ -90,7 +90,7 @@
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(199, 27);
-            this.MskTc.TabIndex = 23;
+            this.MskTc.TabIndex = 3;
             // 
             // TxtSurname
             // 
@@ -98,7 +98,7 @@
             this.TxtSurname.Location = new System.Drawing.Point(184, 153);
             this.TxtSurname.Name = "TxtSurname";
             this.TxtSurname.Size = new System.Drawing.Size(199, 27);
-            this.TxtSurname.TabIndex = 22;
+            this.TxtSurname.TabIndex = 2;
             // 
             // TxtName
             // 
@@ -106,7 +106,7 @@
             this.TxtName.Location = new System.Drawing.Point(184, 104);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(199, 27);
-            this.TxtName.TabIndex = 21;
+            this.TxtName.TabIndex = 1;
             // 
             // label6
             // 
@@ -200,6 +200,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmInformationLineUp";
             this.Text = "FrmInformationLineUp";
+            this.Load += new System.EventHandler(this.FrmInformationLineUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
