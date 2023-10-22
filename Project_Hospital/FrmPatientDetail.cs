@@ -21,11 +21,28 @@ namespace Project_Hospital
 
         public string tc;
 
-        sqlconnection bgl = new sqlconnection();
+        sqlconnection connect = new sqlconnection();
 
         private void FrmPatientDetail_Load(object sender, EventArgs e)
         {
             LblTc.Text = tc;
+
+            //name and surname writing
+            SqlCommand command = new SqlCommand("Select PatientName,PatientSurname From Tbl_patients where PatientTC=@p1",connect.connection());
+            command.Parameters.AddWithValue("@p1",LblTc.Text);
+            SqlDataReader reader = command.ExecuteReader();
+            while(reader.Read()) 
+            {
+                LblNameSurname.Text = reader[0] + " " + reader[1];
+            }
+
+            connect.connection().Close();
+
+            //Appointment history
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From  Tbl_Appointments Where PatientTC=" + tc, connect.connection());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
 
 
         }
