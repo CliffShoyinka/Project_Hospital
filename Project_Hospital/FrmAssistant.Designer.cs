@@ -1,6 +1,6 @@
 ﻿namespace Project_Hospital
 {
-    partial class FrmAssistant
+    partial class AssistantEntrance
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,7 @@
             this.BtnEnter.TabIndex = 12;
             this.BtnEnter.Text = "Enter";
             this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // TxtPassword
             // 
@@ -93,7 +94,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Assistant Entrance";
             // 
-            // FrmAssistant
+            // AssistantEntrance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,7 +106,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmAssistant";
+            this.Name = "AssistantEntrance";
             this.Text = "FrmAssistant";
             this.ResumeLayout(false);
             this.PerformLayout();

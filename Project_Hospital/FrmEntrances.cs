@@ -33,7 +33,7 @@ namespace Project_Hospital
 
         private void BtnAssistantEntrance_Click(object sender, EventArgs e)
         {
-            FrmAssistant fr = new FrmAssistant();
+            AssistantEntrance fr = new AssistantEntrance();
             fr.Show();
             this.Hide();
         }
