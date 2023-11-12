@@ -102,5 +102,17 @@ namespace Project_Hospital
             FrmDoctorPanel drp = new FrmDoctorPanel();
             drp.Show();
         }
+
+        private void BtnUnitPanel_Click(object sender, EventArgs e)
+        {
+            FrmUnit fru = new FrmUnit();
+            fru.Show();
+        }
+
+        private void BtnAppointmentsList_Click(object sender, EventArgs e)
+        {
+            FrmAppointmentList fal = new FrmAppointmentList();
+            fal.Show();
+        }
     }
 }

@@ -384,6 +384,7 @@
             this.BtnAppointmentsList.TabIndex = 3;
             this.BtnAppointmentsList.Text = "Appointments List";
             this.BtnAppointmentsList.UseVisualStyleBackColor = true;
+            this.BtnAppointmentsList.Click += new System.EventHandler(this.BtnAppointmentsList_Click);
             // 
             // BtnUnitPanel
             // 
@@ -394,6 +395,7 @@
             this.BtnUnitPanel.TabIndex = 2;
             this.BtnUnitPanel.Text = "Unit Panel";
             this.BtnUnitPanel.UseVisualStyleBackColor = true;
+            this.BtnUnitPanel.Click += new System.EventHandler(this.BtnUnitPanel_Click);
             // 
             // BtnDoctorPanel
             // 
