@@ -140,19 +140,20 @@
             // BtnAdd
             // 
             this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAdd.Location = new System.Drawing.Point(96, 348);
+            this.BtnAdd.Location = new System.Drawing.Point(27, 348);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(140, 38);
+            this.BtnAdd.Size = new System.Drawing.Size(75, 38);
             this.BtnAdd.TabIndex = 10;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnDelete
             // 
             this.BtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDelete.Location = new System.Drawing.Point(295, 348);
+            this.BtnDelete.Location = new System.Drawing.Point(118, 348);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(140, 38);
+            this.BtnDelete.Size = new System.Drawing.Size(85, 38);
             this.BtnDelete.TabIndex = 11;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -160,9 +161,9 @@
             // BtnUpdate
             // 
             this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnUpdate.Location = new System.Drawing.Point(480, 348);
+            this.BtnUpdate.Location = new System.Drawing.Point(218, 348);
             this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(140, 38);
+            this.BtnUpdate.Size = new System.Drawing.Size(92, 38);
             this.BtnUpdate.TabIndex = 12;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
@@ -172,15 +173,16 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(338, 36);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(434, 282);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 350);
             this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // FrmDoctorPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 412);
+            this.ClientSize = new System.Drawing.Size(1151, 412);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnDelete);
@@ -197,6 +199,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmDoctorPanel";
             this.Text = "FrmDoctorPanel";
+            this.Load += new System.EventHandler(this.FrmDoctorPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

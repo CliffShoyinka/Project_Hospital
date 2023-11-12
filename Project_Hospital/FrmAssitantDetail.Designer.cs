@@ -143,6 +143,7 @@
             this.BtnCreateAnnouncement.TabIndex = 4;
             this.BtnCreateAnnouncement.Text = "Create";
             this.BtnCreateAnnouncement.UseVisualStyleBackColor = true;
+            this.BtnCreateAnnouncement.Click += new System.EventHandler(this.BtnCreateAnnouncement_Click);
             // 
             // RchAnnouncement
             // 
@@ -403,6 +404,7 @@
             this.BtnDoctorPanel.TabIndex = 1;
             this.BtnDoctorPanel.Text = "Doctor Panel";
             this.BtnDoctorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoctorPanel.Click += new System.EventHandler(this.BtnDoctorPanel_Click);
             // 
             // FrmAssitantDetail
             // 

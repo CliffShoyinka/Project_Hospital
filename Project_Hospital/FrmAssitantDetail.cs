@@ -87,5 +87,20 @@ namespace Project_Hospital
 
             connect.connection().Close();
         }
+
+        private void BtnCreateAnnouncement_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("insert into Tbl_Announcements (Announcement) values (@a1)", connect.connection());
+            command.Parameters.AddWithValue("@a1", RchAnnouncement.Text);
+            command.ExecuteNonQuery();
+            connect.connection();
+            MessageBox.Show("Announcement Created");
+        }
+
+        private void BtnDoctorPanel_Click(object sender, EventArgs e)
+        {
+            FrmDoctorPanel drp = new FrmDoctorPanel();
+            drp.Show();
+        }
     }
 }
