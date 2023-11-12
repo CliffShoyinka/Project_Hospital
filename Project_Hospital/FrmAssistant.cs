@@ -19,7 +19,7 @@ namespace Project_Hospital
             InitializeComponent();
         }
 
-        SqlConnection connect = new SqlConnection();
+        sqlconnection connect = new sqlconnection();
         private void BtnEnter_Click(object sender, EventArgs e)
         {
 
@@ -44,5 +44,9 @@ namespace Project_Hospital
             
         }
 
+        private void AssistantEntrance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

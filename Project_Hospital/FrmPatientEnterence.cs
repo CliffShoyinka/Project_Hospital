@@ -48,5 +48,10 @@ namespace Project_Hospital
 
             connect.connection().Close();
         }
+
+        private void FrmPatientEnterence_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

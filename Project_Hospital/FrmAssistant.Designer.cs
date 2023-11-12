@@ -108,6 +108,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AssistantEntrance";
             this.Text = "FrmAssistant";
+            this.Load += new System.EventHandler(this.AssistantEntrance_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
