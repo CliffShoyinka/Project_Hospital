@@ -82,6 +82,12 @@
     <Compile Include="FrmDoctorEntrance.Designer.cs">
       <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoctorInformationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorInformationUpdate.Designer.cs">
+      <DependentUpon>FrmDoctorInformationUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDoctorPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorEntrance.resx">
       <DependentUpon>FrmDoctorEntrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorInformationUpdate.resx">
+      <DependentUpon>FrmDoctorInformationUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorPanel.resx">
       <DependentUpon>FrmDoctorPanel.cs</DependentUpon>

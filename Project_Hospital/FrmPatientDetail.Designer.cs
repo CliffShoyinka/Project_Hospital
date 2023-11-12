@@ -34,6 +34,8 @@
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.UpdateInfo = new System.Windows.Forms.LinkLabel();
             this.BtnAppointment = new System.Windows.Forms.Button();
             this.RchComplain = new System.Windows.Forms.RichTextBox();
@@ -46,8 +48,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,6 +128,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Patient Information";
             // 
+            // TxtID
+            // 
+            this.TxtID.Enabled = false;
+            this.TxtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtID.Location = new System.Drawing.Point(101, 32);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.Size = new System.Drawing.Size(163, 27);
+            this.TxtID.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(55, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 22);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "ID:";
+            // 
             // UpdateInfo
             // 
             this.UpdateInfo.AutoSize = true;
@@ -147,6 +166,7 @@
             this.BtnAppointment.TabIndex = 9;
             this.BtnAppointment.Text = "Take an Appointment";
             this.BtnAppointment.UseVisualStyleBackColor = true;
+            this.BtnAppointment.Click += new System.EventHandler(this.BtnAppointment_Click);
             // 
             // RchComplain
             // 
@@ -243,24 +263,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(458, 207);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(55, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 22);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "ID:";
-            // 
-            // TxtID
-            // 
-            this.TxtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtID.Location = new System.Drawing.Point(101, 32);
-            this.TxtID.Name = "TxtID";
-            this.TxtID.Size = new System.Drawing.Size(163, 27);
-            this.TxtID.TabIndex = 12;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // FrmPatientDetail
             // 

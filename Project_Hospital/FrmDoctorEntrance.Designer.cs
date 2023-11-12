@@ -45,6 +45,7 @@
             this.BtnEnter.TabIndex = 13;
             this.BtnEnter.Text = "Enter";
             this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // TxtPassword
             // 

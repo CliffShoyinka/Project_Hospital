@@ -73,7 +73,7 @@ namespace Project_Hospital
         private void CmbDoctor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments Where AppointmentUnit='" + CmbUnit.Text + "'", connect.connection());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Appointments Where AppointmentUnit='" + CmbUnit.Text + "' + and AppoinmentDoctor='" + CmbDoctor.Text + "' and AppointmentState=0", connect.connection());
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
@@ -83,6 +83,23 @@ namespace Project_Hospital
             FrmInformationLineUp fr = new FrmInformationLineUp();
             fr.tcno = LblTc.Text;
             fr.Show();
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int selected = dataGridView2.SelectedCells[0].RowIndex;
+            TxtID.Text = dataGridView2.Rows[selected].Cells[0].Value.ToString();
+        }
+
+        private void BtnAppointment_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("Update Tbl_Appointments set AppointmentState=1, PatitentTC=@p1, PatitentReport=@p2 where AppointmentID=@p3", connect.connection());
+            command.Parameters.AddWithValue("@p1", LblTc.Text);
+            command.Parameters.AddWithValue("@p2", RchComplain.Text);
+            command.Parameters.AddWithValue("@p3", TxtID.Text);
+            command.ExecuteNonQuery();
+            connect.connection().Close();
+            MessageBox.Show("Appointment took", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
