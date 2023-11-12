@@ -25,7 +25,7 @@ namespace Project_Hospital
 
         private void FrmAssitantDetail_Load(object sender, EventArgs e)
         {
-            LblTc.Text = TCnumber;  
+            LblTc.Text = TCnumber;
 
             //ad-soyad
             SqlCommand command1 = new SqlCommand("Select AssistantNameSurname From Tbl_Assistants where AsistantTC=@p1", connect.connection());
@@ -113,6 +113,17 @@ namespace Project_Hospital
         {
             FrmAppointmentList fal = new FrmAppointmentList();
             fal.Show();
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAnnouncements fr = new FrmAnnouncements();
+            fr.Show();
         }
     }
 }

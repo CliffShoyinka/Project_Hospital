@@ -38,7 +38,6 @@
             this.RchAnnouncement = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnSave = new System.Windows.Forms.Button();
-            this.BtnUpdate = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoctor = new System.Windows.Forms.ComboBox();
@@ -60,6 +59,7 @@
             this.BtnAppointmentsList = new System.Windows.Forms.Button();
             this.BtnUnitPanel = new System.Windows.Forms.Button();
             this.BtnDoctorPanel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,7 +156,6 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.BtnSave);
-            this.groupBox3.Controls.Add(this.BtnUpdate);
             this.groupBox3.Controls.Add(this.checkBox1);
             this.groupBox3.Controls.Add(this.MskTc);
             this.groupBox3.Controls.Add(this.CmbDoctor);
@@ -180,7 +179,7 @@
             // BtnSave
             // 
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSave.Location = new System.Drawing.Point(60, 318);
+            this.BtnSave.Location = new System.Drawing.Point(57, 366);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(156, 38);
             this.BtnSave.TabIndex = 15;
@@ -188,21 +187,11 @@
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnUpdate.Location = new System.Drawing.Point(60, 370);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(156, 38);
-            this.BtnUpdate.TabIndex = 14;
-            this.BtnUpdate.Text = "Update";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(113, 275);
+            this.checkBox1.Location = new System.Drawing.Point(96, 322);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(71, 26);
             this.checkBox1.TabIndex = 13;
@@ -212,7 +201,7 @@
             // MskTc
             // 
             this.MskTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTc.Location = new System.Drawing.Point(86, 232);
+            this.MskTc.Location = new System.Drawing.Point(86, 247);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(178, 27);
@@ -222,7 +211,7 @@
             // 
             this.CmbDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoctor.FormattingEnabled = true;
-            this.CmbDoctor.Location = new System.Drawing.Point(86, 195);
+            this.CmbDoctor.Location = new System.Drawing.Point(86, 210);
             this.CmbDoctor.Name = "CmbDoctor";
             this.CmbDoctor.Size = new System.Drawing.Size(178, 28);
             this.CmbDoctor.TabIndex = 11;
@@ -231,7 +220,7 @@
             // 
             this.CmbUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbUnit.FormattingEnabled = true;
-            this.CmbUnit.Location = new System.Drawing.Point(86, 158);
+            this.CmbUnit.Location = new System.Drawing.Point(86, 173);
             this.CmbUnit.Name = "CmbUnit";
             this.CmbUnit.Size = new System.Drawing.Size(178, 28);
             this.CmbUnit.TabIndex = 10;
@@ -240,7 +229,7 @@
             // MskTime
             // 
             this.MskTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTime.Location = new System.Drawing.Point(86, 121);
+            this.MskTime.Location = new System.Drawing.Point(86, 136);
             this.MskTime.Mask = "00:00";
             this.MskTime.Name = "MskTime";
             this.MskTime.Size = new System.Drawing.Size(178, 27);
@@ -250,7 +239,7 @@
             // MskDate
             // 
             this.MskDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskDate.Location = new System.Drawing.Point(86, 84);
+            this.MskDate.Location = new System.Drawing.Point(86, 99);
             this.MskDate.Mask = "00/00/0000";
             this.MskDate.Name = "MskDate";
             this.MskDate.Size = new System.Drawing.Size(178, 27);
@@ -260,7 +249,7 @@
             // Txtid
             // 
             this.Txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txtid.Location = new System.Drawing.Point(86, 48);
+            this.Txtid.Location = new System.Drawing.Point(86, 63);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(178, 27);
             this.Txtid.TabIndex = 7;
@@ -269,7 +258,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(41, 232);
+            this.label10.Location = new System.Drawing.Point(41, 247);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(46, 25);
             this.label10.TabIndex = 6;
@@ -279,7 +268,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(12, 195);
+            this.label9.Location = new System.Drawing.Point(12, 210);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(75, 25);
             this.label9.TabIndex = 5;
@@ -289,7 +278,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(34, 159);
+            this.label8.Location = new System.Drawing.Point(34, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 25);
             this.label8.TabIndex = 4;
@@ -299,7 +288,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(24, 120);
+            this.label7.Location = new System.Drawing.Point(24, 135);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 25);
             this.label7.TabIndex = 3;
@@ -309,7 +298,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(26, 83);
+            this.label6.Location = new System.Drawing.Point(26, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 25);
             this.label6.TabIndex = 2;
@@ -319,7 +308,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(43, 46);
+            this.label1.Location = new System.Drawing.Point(43, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 25);
             this.label1.TabIndex = 1;
@@ -365,6 +354,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.BtnAppointmentsList);
             this.groupBox6.Controls.Add(this.BtnUnitPanel);
             this.groupBox6.Controls.Add(this.BtnDoctorPanel);
@@ -378,7 +368,7 @@
             // BtnAppointmentsList
             // 
             this.BtnAppointmentsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAppointmentsList.Location = new System.Drawing.Point(397, 31);
+            this.BtnAppointmentsList.Location = new System.Drawing.Point(258, 31);
             this.BtnAppointmentsList.Name = "BtnAppointmentsList";
             this.BtnAppointmentsList.Size = new System.Drawing.Size(168, 51);
             this.BtnAppointmentsList.TabIndex = 3;
@@ -389,9 +379,9 @@
             // BtnUnitPanel
             // 
             this.BtnUnitPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnUnitPanel.Location = new System.Drawing.Point(210, 31);
+            this.BtnUnitPanel.Location = new System.Drawing.Point(143, 31);
             this.BtnUnitPanel.Name = "BtnUnitPanel";
-            this.BtnUnitPanel.Size = new System.Drawing.Size(168, 51);
+            this.BtnUnitPanel.Size = new System.Drawing.Size(109, 51);
             this.BtnUnitPanel.TabIndex = 2;
             this.BtnUnitPanel.Text = "Unit Panel";
             this.BtnUnitPanel.UseVisualStyleBackColor = true;
@@ -400,13 +390,24 @@
             // BtnDoctorPanel
             // 
             this.BtnDoctorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDoctorPanel.Location = new System.Drawing.Point(20, 31);
+            this.BtnDoctorPanel.Location = new System.Drawing.Point(2, 31);
             this.BtnDoctorPanel.Name = "BtnDoctorPanel";
-            this.BtnDoctorPanel.Size = new System.Drawing.Size(168, 51);
+            this.BtnDoctorPanel.Size = new System.Drawing.Size(135, 51);
             this.BtnDoctorPanel.TabIndex = 1;
             this.BtnDoctorPanel.Text = "Doctor Panel";
             this.BtnDoctorPanel.UseVisualStyleBackColor = true;
             this.BtnDoctorPanel.Click += new System.EventHandler(this.BtnDoctorPanel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(432, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 51);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Announcements";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAssitantDetail
             // 
@@ -469,7 +470,7 @@
         private System.Windows.Forms.MaskedTextBox MskDate;
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Button BtnSave;
-        private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
